@@ -33,6 +33,7 @@ Technologies used are
     * Zomato
 4. Hosting
     * Heroku
+    * Dropbox for static files hosting
 
 Detailed docuemnt for the code are in the file. Also more than happy to go through
 with you
@@ -41,6 +42,37 @@ with you
 I have used a Heroku dyno to serve the webiste
 
 **[Klayvio Weather](https://demo-klayvio-weather.herokuapp.com/)**
+
+Following are some email demo the app is able to send out (including sign-up welcome and weather daily newsletter)   
+Notice that the msg and template will not match since it's generated using the --demo flag   
+Also, it's not all the templates 
+
+
+![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=3 "Logo Title Text 1")
+
+
+
+![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=1 "Logo Title Text 1")
+
+
+
+![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=2 "Logo Title Text 1")
+
+
+
+![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=4 "Logo Title Text 1")
+
+
+
+![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=5 "Logo Title Text 1")
+
+
+
+![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=6 "Logo Title Text 1")
+
+
+
+![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=7 "Logo Title Text 1")
 
 #### Improvements
 Quite a few improvements can be made
