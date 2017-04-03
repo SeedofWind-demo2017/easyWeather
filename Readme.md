@@ -68,11 +68,12 @@ Also, it's not all the templates
 
 
 
+![alt text](https://www.dropbox.com/s/l2zbglxb75akrl1/7_new.png?raw=1 "Logo Title Text 1")
+
+
+When click on the restaurant link, it will go to page like this
 ![alt text](https://www.dropbox.com/s/5r5zwppl1yqyzun/6.png?raw=1 "Logo Title Text 1")
 
-
-
-![alt text](https://www.dropbox.com/s/e0wj3y7obyyr44u/7.png?raw=1 "Logo Title Text 1")
 
 #### Improvements
 Quite a few improvements can be made
