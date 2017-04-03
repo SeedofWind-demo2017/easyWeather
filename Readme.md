@@ -46,4 +46,5 @@ I have used a Heroku dyno to serve the webiste
 Quite a few improvements can be made
 1. rabbitMQ + celery to queue up the task
 2. better templatize the email building
+
 I would love the chance to go into more detail to discuss
