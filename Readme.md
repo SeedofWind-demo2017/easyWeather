@@ -5,14 +5,15 @@ Achieved basic requirements and extra functionalities(marked by bold)
     * prevent @klayvio to signup
     * Duplicated email address check
 
-2. (*extra*) upon successfully signing up, a welcome to family email will be sent to user
+2. (**extra**) *upon successfully signing up, a welcome to family email will be sent to user*
 
 3. Customized management option
-    * *python src/manage.py send_newsletters* will send out newsletters to every subscribed user
+    *  python src/manage.py send_newsletters* will send out newsletters to every subscribed user
         * required temperature info in body and subject
         * customized template to each type of weather
-        * (*extra*) send out pick of the day best restaurant
-    * (*extra*) python src/manage.py send_newsletters --demo
+        * (**extra**) send out pick of the day best restaurant (clickable link)
+        * (**extra**) send random generated coupon code
+    * (**extra**) *python src/manage.py send_newsletters --demo*
         * send out all template to admin (me) for demo purpose
 
 #### Approach
@@ -36,4 +37,4 @@ with you
 #### Demo
 I have used a Heroku dyno to serve the webiste
 
-[Klayvio Weather](https://demo-klayvio-weather.herokuapp.com/)
+**[Klayvio Weather](https://demo-klayvio-weather.herokuapp.com/)**
