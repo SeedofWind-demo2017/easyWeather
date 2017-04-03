@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Weather App{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Simple Weather App{% endblock %}" />
+     {% load staticfiles %}
+     <script type="text/javascript" src="{% static 'material/js/jquery-2.2.0.js' %}"></script>
+     <script type="text/javascript" src="{% static 'js/my_scripts.js' %}"></script>
+     {% include 'material/includes/material_css.html' %}
+     {% include 'material/includes/material_js.html' %}
+     <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+     <!-- Set Favicon -->
+     <link href="{% static 'media/favicon.ico' %}" rel="shortcut icon" type="image/png" >
+     {% block css %}{% endblock %}
+</head>
+
+<body>
+
+    {% block content %} {% endblock %}
+
+
+    <footer>
+        <div class="row">
+            <div class="column three leftCol">
+                <p>
+                    &copy; 2017 Klayvio Service
+                </p>
+            </div>
+            <div class="column eight rightCol">
+                <ul>
+                    <li><a href="mailto:Seed@klayvio.com">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
