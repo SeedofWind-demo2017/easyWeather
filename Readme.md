@@ -1,4 +1,5 @@
 #### Functionalities
+---------
 Achieved basic requirements and extra functionalities(marked by bold)
 1. user can enter their email address and choose their location from a list of the top 100 cities in the US by population. user information is stored in postgres in production, sqllite in dev
     * Standard email format check
@@ -17,6 +18,7 @@ Achieved basic requirements and extra functionalities(marked by bold)
         * send out all template to admin (me) for demo purpose
 
 #### Approach
+-----------
 Technologies used are
 1. Backend
     * Django
@@ -35,6 +37,13 @@ Technologies used are
 Detailed docuemnt for the code are in the file. Also more than happy to go through
 with you
 #### Demo
+-------
 I have used a Heroku dyno to serve the webiste
 
 **[Klayvio Weather](https://demo-klayvio-weather.herokuapp.com/)**
+
+#### Improvements
+Quite a few improvements can be made
+1. rabbitMQ + celery to queue up the task
+2. better templatize the email building
+I would love the chance to go into more detail to discuss
