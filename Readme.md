@@ -48,31 +48,31 @@ Notice that the msg and template will not match since it's generated using the -
 Also, it's not all the templates 
 
 
-![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=3 "Logo Title Text 1")
-
-
-
 ![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=1 "Logo Title Text 1")
 
 
 
-![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=2 "Logo Title Text 1")
+![alt text](https://www.dropbox.com/s/vhne7ixix2e42sg/1.png?raw=1 "Logo Title Text 1")
 
 
 
-![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=4 "Logo Title Text 1")
+![alt text](https://www.dropbox.com/s/dr2lw35ky67ij09/2.png?dl=1 "Logo Title Text 1")
 
 
 
-![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=5 "Logo Title Text 1")
+![alt text](https://www.dropbox.com/s/odq9bt35zprzvw2/4.png?raw=1 "Logo Title Text 1")
 
 
 
-![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=6 "Logo Title Text 1")
+![alt text](https://www.dropbox.com/s/mlhohruwmpuqtz7/5.png?raw=1 "Logo Title Text 1")
 
 
 
-![alt text](https://www.dropbox.com/s/70z4hmprl2q71mn/3.png?raw=7 "Logo Title Text 1")
+![alt text](https://www.dropbox.com/s/5r5zwppl1yqyzun/6.png?raw=1 "Logo Title Text 1")
+
+
+
+![alt text](https://www.dropbox.com/s/e0wj3y7obyyr44u/7.png?raw=1 "Logo Title Text 1")
 
 #### Improvements
 Quite a few improvements can be made
