@@ -46,7 +46,7 @@ class Command(BaseCommand):
                 build_email['sub_dic'] = {'-greeting-': "Dear %s" % subscriber.first_name,
                                           '-temperature-': weather_data['cur_temp'],
                                           '-detail-': weather_data['detail'],
-                                          '-avg-': weather_data['average_temp'],
+                                          '-avg-': (weather_data['average_temp']),
                                           '-restaurant_name-': _restaurant,
                                           '-coupon_code-': str(get_coupon())
                                           }

@@ -20,10 +20,9 @@ def get_weather_data(subscriber):
     # return current_temp, smart_average
     # raise ConnectionError
     # deal with other error
-    city, state = subscriber.city, subscriber.state
+    city, state = subscriber.city.lower(), subscriber.state.lower()
     url = 'http://api.wunderground.com/api/%s/conditions/almanac/q/%s/%s.json'\
-        % (WOUNDERGROUND_API_KEY, city, state)
-
+        % (WOUNDERGROUND_API_KEY, state, city)
     r = requests.get(url)
     weather_dic = r.json()
     cur_temp = float(weather_dic['current_observation']['temp_f'])
@@ -37,7 +36,7 @@ def get_weather_data(subscriber):
         normal_low = float(weather_dic['almanac']['temp_low']['normal']['F'])
     else:
         normal_low = cur_temp
-    normal_temp = get_smartavg(normal_high, normal_low)
+    normal_temp = round(get_smartavg(normal_high, normal_low), 1)
     detail = weather_dic['current_observation']['weather']
     return {'cur_temp': cur_temp, 'average_temp': normal_temp, 'detail': detail.lower()}
 
@@ -79,18 +78,21 @@ def get_message(cur_temp, average_temp, detail):
 
 
 def get_template_id(cur_temp, average_temp, detail):
-    if any(d == "clear" for d in detail) and cur_temp > average_temp + 6:
+    print detail
+    if any(d == "clear" for d in detail.split()) and cur_temp > average_temp + 6:
         template_id = SG_TEMPLATE_IDS.SUPER
-    elif any(d == "clear" for d in detail):
+    elif any(d == "clear" for d in detail.split()):
         template_id = SG_TEMPLATE_IDS.SUNNY
-    elif any(d in WEATHER_PHRASE_RAIN for d in detail):
+    elif any(d in WEATHER_PHRASE_RAIN for d in detail.split()):
         template_id = SG_TEMPLATE_IDS.RAINY
-    elif any(d == "thunderstorms" for d in detail):
+    elif any(d == "thunderstorms" for d in detail.split()):
         template_id = SG_TEMPLATE_IDS.THUNDERSTORM
-    elif any(d == "snow" for d in detail):
+    elif any(d == "snow" for d in detail.split()):
         template_id = SG_TEMPLATE_IDS.SNOW
-    elif any(d == "cloudy" for d in detail):
+    elif any(d in ["cloudy", "overcast"] for d in detail.split()):
         template_id = SG_TEMPLATE_IDS.CLOUDY
+    elif any(d in WEATHER_PHRASE_BAD for d in detail.split()):
+        template_id = SG_TEMPLATE_IDS.BAD
     else:
         template_id = SG_TEMPLATE_IDS.NORMAL
     return template_id

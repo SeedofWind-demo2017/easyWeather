@@ -4,16 +4,17 @@ class SUBSTITUTION_INDEX(object):
 
 
 class SG_TEMPLATE_IDS:
-    SIGNUP = "2205c072-74aa-438c-b22e-aee09eaf8cd1"
-    SUNNY = "bfae5ff7-aec7-4c40-9773-d904374d24d2"
-    SUPER = "203e1458-098a-4615-9310-d37265fe1a0c"
-    RAINY = "e504736d-2d2d-4d91-a389-0a6d3fb86642"
-    THUNDERSTORM = "d416a4e7-78bb-441c-9ae8-927cbee885cf"
-    SNOW = "8ae38d86-789f-4061-91f2-11f17887dbaa"
-    NORMAL = "323d1b09-e37b-4d1c-8e93-f1d4ff6f883f"
-    CLOUDY = "3db665cf-38f2-4c61-aefa-fe2b0a4fb960"
+    SIGNUP = "483a5c20-5505-40c5-b16d-907fe8fbf4f7"
+    SUNNY = "44918208-d0a1-49e3-8b4b-01f0e3b98583"
+    SUPER = "e250cba5-1797-4261-9c40-7d2d17cc7451"
+    RAINY = "365baaaf-52bb-4a13-abba-934cedc42534"
+    THUNDERSTORM = "032a8d94-5ac8-4b60-acad-69a916c5fe18"
+    SNOW = "f5e40c5b-3d19-4d81-846d-2ccb7f81d651"
+    NORMAL = "cde218ad-c6ef-442f-acf4-ff8df214a4f9"
+    CLOUDY = "768ec9f2-8f03-4f07-8c66-3ef79f27e713"
+    BAD = "a98ff259-a79f-4146-973b-f88ca48af252"
 
 
-BLACKLIST_DOMAINS = ["klayvio", "seed", "smg"]
+BLACKLIST_DOMAINS = ["seed", "smg"]
 BLACKLIST_EXTENSIONS = ["gov"]
 DATA_STRING = 1
