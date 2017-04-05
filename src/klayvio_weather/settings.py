@@ -86,10 +86,7 @@ except ImportError:
     }
 
     # Email settings
-    WOUNDERGROUND_API_KEY = "93d7518a746043d1"
-    EMAIL_BACKEND = "sgbackend.SendGridBackend"
-    SENDGRID_API_KEY = "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"
-    ZOMOTA_API_KEY = "3d6db8b76ba3b8f24ee6bfa284c282c5"
+    # avoid suspension
     # Internationalization
     # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
