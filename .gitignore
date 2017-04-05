@@ -1,0 +1,5 @@
+bin/activate
+src/db.sqlite3
+src/klayvio_weather/settings_dev.py
+.Python
+*.pyc
