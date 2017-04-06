@@ -1,8 +1,35 @@
 #### Configuration
 -----------
-1. Download 
-
-
+1. Download and unzip the [new_klayvio_weahter](https://www.dropbox.com/s/fwy0cb9c794713v/new_klayvio_weather.zip?dl=0)
+2. create a virtual env 
+   ```
+   virtualenv -p <PATH TO PYTHON2.7> <PATH TO VIRTUAL_ENV PATH>
+   if you have python2.7 and want to create the virtualenv at current project folder DO
+   
+   virtualenv . (following step will assume you did this)
+   ```
+3. activate virtualenv
+   ```
+   source bin/activate
+   ```
+4. install all needed packages
+   ```
+   pip install -r requirements.txt
+   ```
+5. migrate and create database schema
+   ```
+   python src/manage.py migrate
+   ```
+6. finally runserver
+   ```
+   python src/manage.py runserver
+   ```
+7. now you can also test the newsletter command locally
+   ```
+   python src/manage.py send_newsletters
+   &
+   python src/manage.py send_newsletters --demo
+   ```
 #### Functionalities
 ---------
 Achieved basic requirements and extra functionalities(marked by bold)
