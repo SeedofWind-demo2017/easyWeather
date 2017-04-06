@@ -122,9 +122,6 @@ Notes: One needs to handle dead-lock when use multiple
   Similar approach can be implemented for the sign-up emailing process
 
 ### (7) How did you end up solving the SendGrid issue?
-I simply signed up a new API key and recreated the template (i kept a local copy)
-One can simply use
-from django.core.mail import send_mail
-
-to do the same thing. That's how we built our emailing tool for SurveyMini. I just wanted
-to try something new
+I simply signed up a new API key and recreated the template (i kept a local copy)   
+One can simply use from django.core.mail import send_mail to do the same thing.   
+That's how we built our emailing tool for SurveyMini. I just wanted to try something new
