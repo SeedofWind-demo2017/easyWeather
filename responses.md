@@ -118,9 +118,8 @@ Notes: One needs to handle dead-lock when use multiple
     ```
 
 
-6. *Extra*
-
-Similar approach can be implemented for the sign-up emailing process
+6. *Extra*  
+  Similar approach can be implemented for the sign-up emailing process
 
 ### (7) How did you end up solving the SendGrid issue?
 I simply signed up a new API key and recreated the template (i kept a local copy)
