@@ -2,7 +2,7 @@
 
 #### Configuration
 -----------
-1. Download and unzip the [new_klayvio_weahter](https://www.dropbox.com/s/fwy0cb9c794713v/new_klayvio_weather.zip?dl=0)
+1. Download and unzip the [new_klayvio_weahter](https://www.dropbox.com/s/fwy0cb9c794713v/klayvio_weather.zip?dl=0)
 2. create a virtual env 
    ```
    virtualenv -p <PATH TO PYTHON2.7> <PATH TO VIRTUAL_ENV PATH>
