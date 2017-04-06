@@ -118,7 +118,7 @@ Notes: One needs to handle dead-lock when use multiple
     ```
 
 
-*Extra*
+6. *Extra*
 
 Similar approach can be implemented for the sign-up emailing process
 
