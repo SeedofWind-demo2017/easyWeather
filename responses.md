@@ -1,25 +1,25 @@
 
 ### (1). The readme doesn’t include instructions for running the web server itself. Do you have a way to run it on a single machine (not Heroku?)
 
-Yes, definitely. Django is really easy with local testing. I updated the ReadMe for the step of establishing a local host
+Yes, definitely. Django is really easy with local testing.   
+I updated the ReadMe for the step of establishing a local host
 
 ### (2). Your zip file included Python libraries. Can you clean up the code to not have the binaries included?
 
 
-Thanks for pointing this out! Initially, i added them to .gitignore and was hoping you guys can directly clone them from Github. unfortunately, sendgrid suspend my account.
-The updated zipfile should be clean
+Thanks for pointing this out! Initially, i added them to .gitignore and was hoping you guys can directly clone them from Github. unfortunately, sendgrid suspend my account.   
+__The updated zipfile should be clean__
 
 ### (3) We don’t see some of the management commands such as get_weather_data. Are some files missing?
 
 It's located in the *_init_.py* for the commands module.
 The principle engineer of my previous team has a philosophy that we should localize the function
 as low-level as possible, i kind of followed his design philosophy
-
-However, after giving it a bit more thought, i think they should be decoupled from the commands module and relocated to the utils.py.
+However, after giving it a bit more thought, i think they should be decoupled from the commands module and __relocated to the utils.py__.  
 Although right now they only used for the django commands method, one can imagine it is useful
 for the future API (such as API to retrieve weather data to display on a dashboard)
 
-I updated this in the zip as well
+__I updated this in the zip as well__
 
 ### (4) Love the idea of the ‘demo’ mode but some of the code is duplicated there. How would you clean that up?
 
