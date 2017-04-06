@@ -1,15 +1,15 @@
 
-#### (1). The readme doesn’t include instructions for running the web server itself. Do you have a way to run it on a single machine (not Heroku?)
+### (1). The readme doesn’t include instructions for running the web server itself. Do you have a way to run it on a single machine (not Heroku?)
 
 Yes, definitely. Django is really easy with local testing. I updated the ReadMe for the step of establishing a local host
 
-#### (2). Your zip file included Python libraries. Can you clean up the code to not have the binaries included?
+### (2). Your zip file included Python libraries. Can you clean up the code to not have the binaries included?
 
 
 Thanks for pointing this out! Initially, i added them to .gitignore and was hoping you guys can directly clone them from Github. unfortunately, sendgrid suspend my account.
 The updated zipfile should be clean
 
-#### (3) We don’t see some of the management commands such as get_weather_data. Are some files missing?
+### (3) We don’t see some of the management commands such as get_weather_data. Are some files missing?
 
 It's located in the *_init_.py* for the commands module.
 The principle engineer of my previous team has a philosophy that we should localize the function
@@ -21,7 +21,7 @@ for the future API (such as API to retrieve weather data to display on a dashboa
 
 I updated this in the zip as well
 
-#### (4) Love the idea of the ‘demo’ mode but some of the code is duplicated there. How would you clean that up?
+### (4) Love the idea of the ‘demo’ mode but some of the code is duplicated there. How would you clean that up?
 
 That's a really good point. Thanks for the advice
 i added that the last minute for testing, it totally needs to be refactored. I updated the code
@@ -36,8 +36,7 @@ and handle exceptions
 Inspired by your suggestion, i have also written one abstraction for sending user sign-up welcome email. It is clearer to write a separate function because the logic is much simpler than building a newsletter
 
 
-
-#### (5) What is the purpose of your sub_tuples and personalizations?
+### (5) What is the purpose of your sub_tuples and personalizations?
 
 The html/css for emailing template, though i wrote them myself, is stored in send-grid.
 Send-grid then allow you to specify a dictionary or map to substitute one string in the template for dynamic data via API
@@ -47,7 +46,7 @@ there is ```_temperature_``` I then can specify
 {"_temperature_": CURRENT_TEMPERATURE}
 ```
 it will substitute ```_temperature_``` with the value i specified.
-#### (6) How would you scale the app or personalization to send to perhaps 1m+ recipients daily?
+### (6) How would you scale the app or personalization to send to perhaps 1m+ recipients daily?
 Excellent question, i kind of touched that in the readme
 
 Since the model is
@@ -122,7 +121,7 @@ Notes: One needs to handle dead-lock when use multiple
 *Extra*
 Similar approach can be implemented for the sign-up emailing process
 
-#### (7) How did you end up solving the SendGrid issue?
+### (7) How did you end up solving the SendGrid issue?
 I simply signed up a new API key and recreated the template (i kept a local copy)
 One can simply use
 from django.core.mail import send_mail
