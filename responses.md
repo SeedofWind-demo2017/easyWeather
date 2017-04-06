@@ -13,7 +13,7 @@ __The updated zipfile should be clean__
 ### (3) We don’t see some of the management commands such as get_weather_data. Are some files missing?
 
 It's located in the *_init_.py* for the commands module. The principle engineer of my previous team has a philosophy that we should localize the function as low-level as possible, i kind of followed his design philosophy  
-However, after giving it a bit more thought, i think they should be decoupled from the commands module and __relocated to the utils.py__. Although right now they only used for the django commands method, one can imagine it is useful
+However, after giving it a bit more thought, i think they should be decoupled from the commands module and relocated to the ```utils.py```. Although right now they only used for the django commands method, one can imagine it is useful
 for the future API (such as API to retrieve weather data to display on a dashboard)
 
 __I updated this in the zip as well__
