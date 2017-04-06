@@ -26,11 +26,9 @@ I updated this in the zip as well
 That's a really good point. Thanks for the advice
 i added that the last minute for testing, it totally needs to be refactored. I updated the code
 Here is the approach
-
-a. leave the sg_send_email as the low-level API for sending email via sendgrid
-b. write newsletter_builder as one level abstraction to build parameter dictionary (via invoking various helper method) for sg_send_grid needed for sending user newsletter (admin and average user)
-c. write send_user_newsletter as one more level abstraction to control the invoking of (b) and (a)
-and handle exceptions
+  a. leave the sg_send_email as the low-level API for sending email via sendgrid
+  b. write newsletter_builder as one level abstraction to build parameter dictionary (via invoking various helper method) for sg_send_grid needed for sending user newsletter (admin and average user)
+  c. write send_user_newsletter as one more level abstraction to control the invoking of (b) and (a) and handle exceptions
 
 
 Inspired by your suggestion, i have also written one abstraction for sending user sign-up welcome email. It is clearer to write a separate function because the logic is much simpler than building a newsletter
