@@ -51,7 +51,7 @@ Achieved basic requirements and extra functionalities(marked by bold)
     *  python src/manage.py send_newsletters* will send out newsletters to every subscribed user
         * required temperature info in body and subject
         * customized template to each type of weather
-        * (**extra**) send out pick of the day best restaurant (clickable link)
+        * (**extra**) send out pick of the day best restaurant (clickable link) of user's city
         * (**extra**) send random generated coupon code
     * (**extra**) *python src/manage.py send_newsletters --demo*
         * send out all template to admin (me) for demo purpose
