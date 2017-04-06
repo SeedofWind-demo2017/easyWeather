@@ -1,9 +1,14 @@
+#### Configuration
+-----------
+1. Download 
+
+
 #### Functionalities
 ---------
 Achieved basic requirements and extra functionalities(marked by bold)
 1. user can enter their email address and choose their location from a list of the top 100 cities in the US by population. user information is stored in postgres in production, sqllite in dev
     * Standard email format check
-    * prevent @klayvio to signup
+    * prevent @smg to signup
     * Duplicated email address check
 
 2. (**extra**) *upon successfully signing up, a welcome to family email will be sent to user*
