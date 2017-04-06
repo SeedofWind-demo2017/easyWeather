@@ -119,6 +119,7 @@ Notes: One needs to handle dead-lock when use multiple
 
 
 *Extra*
+
 Similar approach can be implemented for the sign-up emailing process
 
 ### (7) How did you end up solving the SendGrid issue?
