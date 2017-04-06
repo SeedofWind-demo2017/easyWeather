@@ -30,6 +30,11 @@
    &
    python src/manage.py send_newsletters --demo
    ```
+8. Credentials for admin page
+   ```
+   user:   klayvio
+   password:   klayvio
+   ```
 #### Functionalities
 ---------
 Achieved basic requirements and extra functionalities(marked by bold)
