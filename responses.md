@@ -93,7 +93,7 @@ So we
     ```python
     class QueuedNewesLetterGenerator_Sender(Task):
     def run(self, some_requried_parameter):
-        @some_decarator_to_prevent_deadlock?
+        @some_decarator_to_prevent_deadlock
         @some_decarator_to_restrict_access_to_database_write_permission
         def run_inner():
             result = analyze(subscriber)
